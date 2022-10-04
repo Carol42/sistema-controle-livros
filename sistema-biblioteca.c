@@ -269,7 +269,7 @@ void Emprestar(){
         if (!ferror(arq))
             while (!feof(arq)){
                 if (dados.ativo)
-                    printf("Codigo: %d \n Nome: %s: \n Nota: %.2f \n Genero: %s\n Status: %c\n Ativo: %d \n\n", dados.codigo,dados.nome,dados.nota, dados.genero, dados.status, dados.ativo);
+                    printf("Codigo: %d \n Nome: %s \n Nota: %.2f \n Genero: %s\n Status: %c\n Ativo: %d \n\n", dados.codigo,dados.nome,dados.nota, dados.genero, dados.status, dados.ativo);
                 fread(&dados,sizeof(struct ficha),1,arq);
             }
         else puts("ERROR!!");
